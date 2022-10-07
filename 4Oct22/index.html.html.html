@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<title>Window Open& Close Window</title>
+</head>
+<body>
+    <button onclick = "openWindow()">
+     Open Window</button>
+     <button onclick="closeWindow()">Close Window</button>>
+     <script type="text/javascript">
+        var myWindow;
+        function openWindow() {
+            myWindow = window.open("http://www.youtube.com","",width=500px,
+            height=500px, left=200px, top=200px");
+             }
+        function closeWindow() {
+                myWindow.close();
+        }
+</script>
+</body>
+</html>
