@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+        <script type = "text/javascript">
+            <!--
+                function ReadCookie()
+                {
+                    var allcookies = document.cookies;
+                    document.write ("All Cookie : " +allcookies );
+
+                    // Get the cookie pair in an array
+                    cookiesarray = allcookies.split(';');
+
+                    // Now take key value pair out of this array 
+                    for(var i=0; i<cookiearray.length; i++) {
+                        name = cookiesarray[i].split(';');
+                        value = cookiearray[i].split('=')[1];
+                        document.write ("Key is : " + name + " and value is
+                        : " + value);
+
+                    }
+                }
+            //-->
+        </script>
+
+    </head>
+    <form name = "myform" action>
+        <p> click the following button and see the result:</p>
+        <input type = "button" value = "Get Cookie" onclick =
+        "ReadCookie()"/>
+    </form>
+
+    </body>
+</html>
